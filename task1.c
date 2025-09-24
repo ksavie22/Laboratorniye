@@ -1,48 +1,29 @@
 #include <stdio.h>
 #include <locale.h>
-
 int main()
 {
+    int num1, num2;
     setlocale(LC_CTYPE, "RUS");
+    
 
-    // Пункт 1
-    printf("123\n");
+    puts("введите число");
+    scanf("%d", &num1);
+    printf("Введено число: %d\n", num1);
 
-    // Пункт 2
-    printf("1\n2\n3\n");
+  
+    puts("введите число");
+    scanf("%d", &num2);
+    printf("Введено число: %d\n", num2);
+    printf("сумма: %d + %d=%d\n", num1, num2, num1 + num2);
+    printf("Разность: %d - %d=%d\n", num1, num2, num1 - num2);
+    printf("Произведение: %d * %d=%d\n", num1, num2, num1 * num2);
+    
+    printf("Частное: %d / %d=%d\n", num1, num2, num1 / num2);
+    printf("Остаток от деления: %d // %d = %d\n", num1, num2, num1 % num2);
 
-    // Пункт 3
-    printf("\t1\n");
-    printf("\t\t2\n");
-    printf("\t\t\t3\n");
 
-    // Пункт 4
-    printf("%2d\n", 1);
-    printf("%4d\n", 2);
-    printf("%6d\n", 3);
-    printf("%8d\n", 4);
+    
 
-    // Пункт 5
-    printf("%10.3f\n", 12.234657);
-
-    // Пункт 6
-    printf("%10.5f\n", 12.234657);
-
-    // Пункт 7
-    printf("Остаток от деления %d на %d равен %d\n", 5, 2, 5 % 2);
-
-    // Пункт 8-9
-    printf("Остаток от деления %d на %d равен %d\n", 7, 5, 7 % 5);
-    printf("Результат умножения %d на %d равен %d\n", 2000, 4, 2000 * 4);
-
-    // Пункт 10 - ИСПРАВЛЕННЫЙ ВАРИАНТ
-    printf("%.6f разделить %.6f равно %.6f\n", 5.0, 2000000.0, 5.0 / 2000000.0);
-    printf("%g разделить %g равно %g\n", 5.0, 2000000.0, 5.0 / 2000000.0);
-    printf("%.6e разделить %.6e равно %.6e\n", 5.0, 2000000.0, 5.0 / 2000000.0);
-
-    return 0;
 }
 
-
-
-
+    
