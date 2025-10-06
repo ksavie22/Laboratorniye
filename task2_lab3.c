@@ -9,13 +9,14 @@ int main()
     float D = 1.852;  
 
     setlocale(LC_CTYPE, "RUS");
-    printf("1 морская миля = 1.852 км\n");
-    printf("Введите кол-во морских миль: ");
+    printf("1 Г¬Г®Г°Г±ГЄГ Гї Г¬ГЁГ«Гї = 1.852 ГЄГ¬\n");
+    printf("Г‚ГўГҐГ¤ГЁГІГҐ ГЄГ®Г«-ГўГ® Г¬Г®Г°Г±ГЄГЁГµ Г¬ГЁГ«Гј: ");
 
     scanf("%d", &miles);
 
     result = D * miles; 
-    printf("%d морских миль = %.2f км\n", miles, result);
+    printf("%d Г¬Г®Г°Г±ГЄГЁГµ Г¬ГЁГ«Гј = %.2f ГЄГ¬\n", miles, result);
 
     return 0;
+
 }
